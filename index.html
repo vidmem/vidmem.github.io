@@ -1,69 +1,607 @@
 <!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="js-no ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="js-no ie10"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="lt">
+<!--<![endif]-->
 
-  <head>
+<head>
+	<title>zenitas.lt</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <title>IŠ KOJOS</title>
+	<!--  Boostrap Framework  -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/themes/light-blue.css" rel="stylesheet" id="colors">
+	<!-- Google Fonts - Lato -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=latin-ext" rel="stylesheet"> 
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
+	<!-- CSS Animations -->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
 
-    </style>
-
-  </head>
-
-  <body>
-
+	<!--  Slippry Slideshow -->
+	<link href="assets/css/slippry.min.css" rel="stylesheet">
+</head>
+<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">IŠ KOJOS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">IŠ KOJOS
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">IŠ KOJOS</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-trn navbar-fixed-top" role="navigation" id="navbarSettings">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../">zenitas<span class="text-primary">.lt</span></a>
         </div>
-      </div>
-    </nav>
 
-    <!-- Page Content -->
-    <video autoplay loop muted poster="1.jpg" id="vfons">
-          <source src="1.mp4" type="video/mp4">
-            <source src="1.ogv" type="video/ogv">
-              <source src="1.webm" type="video/webm">
-      </video>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right ">
+                <li> <a href=../apie-mus/>Mes</a>
+                    </li>
+                    <li> <a href=../paslaugos/>Paslaugos</a>
+                    </li>
+                    <li> <a href=../atlikti-darbai/>Darbai</a>
+                    </li>
+                    <li> <a href=../kainu-paketai/>Kainos</a>
+                    </li>
+                    <li> <a href=../kontaktai/>Kontaktai</a>
+                    </li>
+                    <li class="dropdown hidden-xs">
+                    <a href="javascript:void(0);" id="sidebar-btn">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- If navbar is fixed to top and it has the class navbar-default or navbar-inverse this div will add space below the navbar-->
+<div id="navbarSpaceBottom"></div>
+    <!--  Header Section  -->
+    <section class="bg-7 bg-centerTop70 bg-cover">
+        <div class="bg-filter sTop">
+            <div class="container">
+                <div class="jumbotron trn v-center">
+                    <h1>Kuriame ateitį</h1>
+                    <div class="space-sm"></div>
+                    <p>Programuojame internetines svetaines.
+                        <br>Prisitaikome prie bet kokio verslo bei įrenginio.</p>
+                    <div class="space-sm"></div>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn btn-default-trn btn-xlg scroll">Susisiekti</a>
+                        </li>
+                        <li>
+                            <a href="#learn-more" class="btn btn-primary btn-xlg scroll"><i class="fa fa-paper-plane-o"></i>Daugiau info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </body>
+    <!-- Features section -->
+    <div id="learn-more"></div>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <i class="fa fa-laptop hovicon effect-3 sub-b easePulse wow" data-wow-delay="0.2s"></i>
+                        <h3 class="wow fadeIn m-10-top" data-wow-delay="0.4s">Lankstumas</h3>
+                        <p class="wow fadeIn" data-wow-delay="0.4s">Visi įrenginiai <i class="fa fa-heart"></i>
+ mūsų svetaines.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <i class="fa fa-globe hovicon effect-3 sub-b easePulse wow" data-wow-delay="0.4s"></i>
+                        <h3 class="wow fadeIn m-10-top" data-wow-delay="0.6s">HTML5/CSS3/JS</h3>
+                        <p class="wow fadeIn" data-wow-delay="0.6s">Naujausios technologijos bei standartai.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <i class="fa fa-plane hovicon effect-3 sub-b easePulse wow" data-wow-delay="0.6s"></i>
+                        <h3 class="wow fadeIn m-10-top" data-wow-delay="0.8s">Sparta</h3>
+                        <p class="wow fadeIn" data-wow-delay="0.8s">Svetainės optimizuotos ir negaišta brangaus laiko.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <i class="fa fa-lightbulb-o hovicon effect-3 sub-b easePulse wow" data-wow-delay="0.8s"></i>
+                        <h3 class="wow fadeIn m-10-top" data-wow-delay="1s">Idėjos</h3>
+                        <p class="wow fadeIn" data-wow-delay="1s">Mūsų komanda visada atvira naujoms idėjoms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="section-lg bg-grey">
+        <div class="container">
+            <div class="row">
+                <h2 class="lg-title lg-title-border">Kuo mes užsiimame?</h2>
+                <!--fadeInLeft-->
+                <div class=" col-sm-6 wow fadeInLeft">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sapien elit, consequat eget, tristique non. Venenatis quis ante. Curabitur ligula sapien.</p>
+                    <p>Pulvinar a vestibulum quis, facilisis vel sapien. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <div class="space-sm"></div>
+                    <ul class="info-list md-list style i-primary">
+                        <li>
+                            <i class="fa fa-play"></i>Pellentesque pretium lectus id.</li>
+                        <li>
+                            <i class="fa fa-play"></i>Excepteur sint occaecat cupidatat non.</li>
+                        <li>
+                            <i class="fa fa-play"></i>Aliquam erat volutpat ufsce.</li>
+                        <li>
+                            <i class="fa fa-play"></i>Vestibulum fermentum tortor id mi.</li>
+                    </ul>
+                    <div class="space visible-xs"></div>
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <img class="img-mw450" src="assets/img/Showcase-Template-Flat-Presentation-Vol-3-portfolio.png" alt="Flat showcase presentation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our works/ projects section -->
+    <section class="section-lg">
+        <div class="container">
+
+            <h2 class="lg-title lg-title-border">Mūsų darbai</h2>
+
+            <ul class="filter-tabs">
+                <li class="filter active" data-filter="mix"><span>Visi</span>
+                </li>
+                <li class="filter" data-filter="apps"><span>Programavimas</span>
+                </li>
+                <li class="filter" data-filter="devices"><span>Dizainas</span>
+                </li>
+                <li class="filter" data-filter="web"><span>Internetinės svetaines</span>
+                </li>
+            </ul>
+
+            <ul class="row  filter-grid-v2" id="Grid">
+                <!-- Item 1 -->
+                <li class="col-md-4 col-sm-6 mix devices ">
+                    <a href="portfolio-item-v2.html" title="View portfolio item">
+                        <div class="hover-content wow easeUp" data-wow-delay="0.5s">
+                            <img src="assets/img/sign-up-sketch.jpg" class="img-responsive" alt="Portfolio - application">
+                            <div class="top-part hidden-xs">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <div class="bottom-part hidden-xs">
+                                <h3>Pavadinimas</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!-- mix - select all, devices - filter only devices -->
+
+                <!-- Item 2 -->
+                <li class="col-md-4 col-sm-6 mix apps web ">
+                    <a href="../atlikti-darbai/video-fonas/" title="View portfolio item">
+                        <div class="hover-content wow easeUp" data-wow-delay="0.25s">
+                            <img src="assets/img/minimal-wireframe-assets.jpg" class="img-responsive" alt="Websites Layout">
+                            <div class="top-part hidden-xs">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <div class="bottom-part hidden-xs">
+                                <h3>Video fonas</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Item 3 -->
+                <li class="col-md-4 col-sm-6 mix apps ">
+                    <a href="portfolio-item-v2.html" title="View portfolio item">
+                        <div class="hover-content wow easeUp" data-wow-delay="0.75s">
+                            <img src="assets/img/App-Preview.jpg" class="img-responsive" alt="Portfolio - application">
+                            <div class="top-part hidden-xs">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <div class="bottom-part hidden-xs">
+                                <h3>Pavadinimas</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Item 4 -->
+                <li class="col-md-4 col-sm-6 mix devices ">
+                    <a href="portfolio-item-v2.html" title="View portfolio item">
+                        <div class="hover-content wow easeUp" data-wow-delay="0.6s">
+                            <img src="assets/img/macbook.jpg" class="img-responsive" alt="Apple Macbook Pro">
+                            <div class="top-part hidden-xs">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <div class="bottom-part hidden-xs">
+                                <h3>Pavadinimas</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Item 5 -->
+                <li class="col-md-4 col-sm-6 mix web ">
+                    <a href="portfolio-item-v2.html" title="View portfolio item">
+                        <div class="hover-content wow easeUp" data-wow-delay="0.35s">
+                            <img src="assets/img/webdesign.jpg" class="img-responsive" alt="Webdesign">
+                            <div class="top-part hidden-xs">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <div class="bottom-part hidden-xs">
+                                <h3>Pavadinimas</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Item 6 -->
+                <li class="col-md-4 col-sm-6 mix apps ">
+                    <a href="portfolio-item-v2.html" title="View portfolio item">
+                        <div class="hover-content wow easeUp" data-wow-delay="0.85s">
+                            <img src="assets/img/app-screen.jpg" class="img-responsive" alt="application">
+                            <div class="top-part hidden-xs">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <div class="bottom-part hidden-xs">
+                                <h3>Pavadinimas</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <div class="bg-11 bg-cover bg-center">
+        <div class="section-lg bg-filter-v2">
+            <div class="container">
+                <div id="testimonial" class="carousel slide" data-ride="carousel" data-interval="9000">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="testimonial">
+
+                                <p>"Geriausias būdas nuspėti ateitį - kurti ją!"</p>
+                                <div class="space-sm"></div>
+                                <em>- Abraomas Linkolnas</em>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial">
+                                <p>
+                                    "Jei planas A neveikia, abecelėje liko dar 31 raidė!"
+                                </p>
+                                <div class="space-sm"></div>
+                                <em>- Claire Cook</em>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial">
+                                <p>
+                                    "Daryk taip, kad tai būtų paprasta, bet reikšminga!""
+                                </p>
+                                <div class="space-sm"></div>
+                                <em>- Don Draper</em>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial">
+                                <p>
+                                    "Atlikti darbus gerai, trunka kur kas greičiau, nei teisintis, kodėl juos atlikai blogai!"
+                                </p>
+                                <div class="space-sm"></div>
+                                <em>- Henry Wadsworth Longfellow</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <section class="section-lg">
+        <div class="container">
+            <h2 class="big-title text-center">Kainos</h2>
+            <p class="big-subtitle text-center">Verslo susitarimai vadinami sėkmingais, kai abi susitarimo pusės - laimingos. Siūlome pasidalinti darbais per pusę:</p>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div class="hover-content">
+                                <div class="visible-part">
+                                    <h4 class="type">Sidabrinis</h4>
+                                    <h3 class="price text-primary">&euro;334</h3>
+                                    <small class="text-grey month">..nuo</small>
+                                    <h5 class="text-primary details">Detaliau</h5>
+                                </div>
+                                <div class="hidden-part">
+                                    <h4 class="type">Detalės</h4>
+                                    <ul class="list-unstyled info-list md-list">
+                                        <li><span class="text-primary">Mūsų</span> Sparta</li>
+                                        <li><span class="text-primary">Jūsų</span> Tekstas</li>
+                                        <li><span class="text-primary">Mūsų</span> Dizainas</li>
+                                        <li><span class="text-primary">Jūsų</span> Tolerancija</li>
+                                    </ul>
+                                    <a href="pricing-tables.html" title="Start Trial Version"><h5 class="text-primary details">Užsisakyti jau dabar</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.25s">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div class="hover-content">
+                                <div class="visible-part">
+                                    <h4 class="type">Auksinis</h4>
+                                    <h3 class="price text-primary">&euro;753</h3>
+                                    <small class="text-grey month">..nuo</small>
+                                    <h5 class="text-primary details">Detaliau</h5>
+                                </div>
+                                <div class="hidden-part">
+                                    <h4 class="type">Detalės</h4>
+                                    <ul class="list-unstyled info-list md-list">
+                                        <li><span class="text-primary">Mūsų</span> Idėja</li>
+                                        <li><span class="text-primary">Jūsų</span> Kantrybė</li>
+                                        <li><span class="text-primary">Mūsų</span> Dizainas</li>
+                                        <li><span class="text-primary">Jūsų</span> Džiaugsmas</li>
+                                    </ul>
+                                    <a href="pricing-tables.html" title="Start Trial Version"><h5 class="text-primary details">Užsisakyti jau dabar</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.75s">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div class="hover-content">
+                                <div class="visible-part">
+                                    <h4 class="type">Platininis</h4>
+                                    <h3 class="price text-primary">&euro;1096</h3>
+                                    <small class="text-grey month">..nuo</small>
+                                    <h5 class="text-primary details">Detaliau</h5>
+                                </div>
+                                <div class="hidden-part">
+                                    <h4 class="type">Detalės</h4>
+                                    <ul class="list-unstyled info-list md-list">
+                                        <li><span class="text-primary">Mūsų</span> Kruopštumas</li>
+                                        <li><span class="text-primary">Jūsų</span> Poilsis</li>
+                                        <li><span class="text-primary">Mūsų</span> Dizainas</li>
+                                        <li><span class="text-primary">Jūsų</span> Tobulėjimas</li>
+                                    </ul>
+                                    <a href="pricing-tables.html" title="Start Trial Version"><h5 class="text-primary details">Užsisakyti jau dabar</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+    </section>
+    <!-- Scripts-->
+    <!--Back to top-->
+<a href="#" class="back-to-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<!-- Modernizr -->
+<script src="assets/js/min/modernizr.custom.min.js"></script>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>-->
+
+<!-- Bootstrap JS -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap Plugin - open dropdown on hover -->
+<script src="assets/js/min/bootstrap-hover-dropdown.min.js"></script>
+
+<!-- LESS preprocessor -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.4/less.min.js"></script>
+
+<!-- WOW.js - loading animations -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.6/wow.min.js"></script>
+
+<!-- Knobs - our skills -->
+<script src="http://cdn.jsdelivr.net/jquery.knob/1.2.9/jquery.knob.min.js"></script>
+
+<!-- Slippry - Slideshow -->
+<script src="assets/js/min/slippry.min.js"></script>
+
+<!-- Mixitup plugin - Portfolio Filter Grid -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mixitup/1.5.6/jquery.mixitup.min.js"></script>
+
+<!-- Make sticky whatever elements -->
+<script src="http://cdn.jsdelivr.net/jquery.sticky/1.0.0/jquery.sticky.min.js"></script>
+
+<!-- Smooth sroll -->
+<script src="http://cdn.jsdelivr.net/jquery.nicescroll/3.5.4/jquery.nicescroll.min.js"></script>
+
+<!-- Contact Form -->
+<script src="assets/js/min/contact-form.min.js"></script>
+
+<!-- Must be last of all scripts -->
+<script src="assets/js/min/scripts.min.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Side Menu -->
+<div class="sidebar-off hidden-xs sidebar">
+    <div class="wrap">
+
+        <div class="space"></div>
+
+        <h4>Socialiniai tinklai</h4>
+        <ul class="icons-list circle-icons m-no-bottom">
+            <li>
+                <a href="#" title="Follow us">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Follow us">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Follow us">
+                    <i class="fa fa-tumblr"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Follow us">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Follow us">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="space"></div>
+
+        <h4>Kontaktai</h4>
+        <ul class="info-list sm-list">
+            <li>
+                <i class="fa fa-envelope fa-fw"></i>
+                <a class="text-muted" href="mailto:andriusvx@gmail.com">zenitas@pastas.lt</a>
+            </li>
+            <li>
+                <i class="fa fa-phone fa-fw"></i>
+                +370 666 99999
+            </li>
+            <li>
+                <i class="fa fa-map-marker fa-fw"></i>
+                Lietuva
+            </li>
+        </ul>
+    </div>
+</div>
+    <!-- Footer-->
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <h4>Kontaktai</h4>
+                    <ul class="info-list md-list i-primary">
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a href="mailto:example@email.com">zenitas@pastas.lt</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            +370 666 99999
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker fa-fw"></i>
+                            Lietuva
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-sm visible-sm visible-xs"></div>
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <h4>Nuorodos</h4>
+                    <ul class="info-list md-list i-primary">
+                        <li>
+                            <i class="fa fa-angle-right fa-fw"></i>
+                            <a href="#">
+                                <span class="link-title">Mes</span> - Apie įmonę</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right fa-fw"></i>
+                            <a href="#">
+                                <span class="link-title">Paslaugos</span> - Ką mes atliekame</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right fa-fw"></i>
+                            <a href="#">
+                                <span class="link-title">Komanda</span> - Susipažinkite su komandos nariais</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right fa-fw"></i>
+                            <a href="#">
+                                <span class="link-title">Portfolio</span> - Atlikti darbai</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-sm visible-sm visible-xs"></div>
+                <div class="col-md-4 col-lg-4  col-xs-12">
+                    <h4>Apie mus</h4>
+                    <p>Temporibus autem quibusdam et aut officiis debitis ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    <div class="space-sm"></div>
+                    <h4>Mus rasite</h4>
+                    <ul class="circle-icons icons-list">
+                        <li>
+                            <a href="#" title="Follow us">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Follow us">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Follow us">
+                                <i class="fa fa-tumblr"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Follow us">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Follow us">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2016 zenitas.lt Visos teisės saugomos.</p>
+        </div>
+    </div>
+</footer>
+</body>
 
 </html>
